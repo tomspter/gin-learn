@@ -1,4 +1,4 @@
-FROM golang:1.23
+FROM golang:1.21
 
 # 设置工作目录
 WORKDIR /app
