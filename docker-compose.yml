@@ -1,0 +1,12 @@
+version: '1'
+services:
+  web:
+    build: .
+    container_name: gin-test
+    ports:
+      - "8080:8080"
+    networks:
+        - gin-test
+networks:
+  gin-test:
+    driver: bridge
