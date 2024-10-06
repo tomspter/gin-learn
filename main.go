@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	// Creates a gin router with default middleware
 	r := gin.Default()
 	r.Use(cors.New(cors.Config{
 		AllowOrigins:     []string{"*"}, // 允许所有来源
