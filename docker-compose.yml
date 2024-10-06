@@ -8,4 +8,5 @@ services:
 
 networks:
   project-bridge:
+    name: project-bridge
     driver: bridge
