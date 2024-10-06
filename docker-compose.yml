@@ -1,13 +1,12 @@
 services:
   web:
     build: .
+    container_name: backend
     image: backend-image:latest
     ports:
       - "8080:8080"
     networks:
-      project-bridge:
-        - aliases:
-            - backend
+      - project-bridge
 
 networks:
   project-bridge:
