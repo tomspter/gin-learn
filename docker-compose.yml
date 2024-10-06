@@ -1,11 +1,11 @@
 services:
   web:
     build: .
-    container_name: gin-test
     ports:
       - "8080:8080"
     networks:
-        - gin-test
+        - project-bridge
+
 networks:
-  gin-test:
+  project-bridge:
     driver: bridge
